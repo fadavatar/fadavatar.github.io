@@ -64,6 +64,27 @@
 	      <a target="_blank" href="" onclick="alert('Coming Soon!');return false;"><button>Paper</button></a>
         <a target="_blank" href="https://fadavatar.github.io"><button>Page</button></a>
       </div>
+      <p>
+        Ours-Balanced (4.17X speedup)
+      </p>
+      <div class="video-slider">
+        <video src="video/balanced_22.mp4"></video>
+        <video src="video/balanced_0.mp4"></video>
+        <video src="video/balanced_11.mp4"></video>
+        <video src="video/balanced_8.mp4"></video>
+        <video src="video/balanced_26.mp4"></video>
+      </div>
+      <p>
+        Ours-Fast (12.5X speedup)
+      </p>
+      <div class="video-slider">
+        <video src="video/fast_22.mp4"></video>
+        <video src="video/fast_0.mp4"></video>
+        <video src="video/fast_11.mp4"></video>
+        <video src="video/fast_8.mp4"></video>
+        <video src="video/fast_26.mp4"></video>
+      </div>
+
       <h3>Abstract</h3>
 
       <small><span>Diffusion-based audio-driven talking avatar methods have recently gained attention for their high-fidelity, vivid, and expressive results. However, their slow inference speed limits practical applications. Despite the development of various distillation techniques for diffusion models, we found that naive diffusion distillation methods do not yield satisfactory results. Distilled models exhibit reduced robustness with open-set input images and a decreased correlation between audio and video compared to teacher models, undermining the advantages of diffusion models. To address this, we propose FADA (Fast Diffusion Avatar Synthesis with Mixed-Supervised Multi-CFG Distillation). We first designed a mixed-supervised loss to leverage data of varying quality and enhance the overall model capability as well as robustness. Additionally, we propose a multi-CFG distillation with learnable tokens to utilize the correlation between audio and reference image conditions, reducing the threefold inference runs caused by multi-CFG with acceptable quality degradation. Extensive experiments across multiple datasets show that FADA generates vivid videos comparable to recent diffusion model-based methods while achieving an NFE speedup of 4.17-12.5 times.</span></small>
